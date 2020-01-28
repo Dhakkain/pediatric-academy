@@ -4,6 +4,10 @@
   transition: all .4s;
   -webkit-transition: .4s;
   padding: 0;
-  background: #fff;
+  background: #22222e;
   box-shadow: 0 6px 10px -4px rgba(0,0,0,.15);
+}
+
+a{
+  color:white;
 }

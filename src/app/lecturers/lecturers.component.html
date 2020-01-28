@@ -1,5 +1,87 @@
 <div style="text-align:center" data-aos="fade-up">
-  <h1>
-  Wykładowcy
+  <h1 style="font-weight: bolder;">
+    Wykładowcy
   </h1>
+
+  <div class="container">
+    <h2>06.03.2020</h2>
+    <div style="margin: 20px 0px 20px 0px;" class="row justify-content-center" data-aos="fade-up" *ngFor="let item of lecturersFirstDay">
+      <div class="row" *ngIf="item.navigation == 0" style="margin: 15px 0px 15px 0px">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="2500">
+          <img src="../../assets/lecturers/{{item.imgName}}" style="width:75%;border-radius:15%">
+        </div>
+        <div class="col-lg-5" data-aos="fade-right" data-aos-duration="2500">
+          <div style="font-weight: bolder;font-size: larger;margin-top: 30%">
+            {{item.name}}
+          </div>
+
+          <div style="font-style: italic;margin-top: 10px;">
+            {{item.description}}
+          </div>
+          <div style="font-weight: bold;font-size: large;margin-top: 10px;">
+            {{item.date}}
+          </div>
+        </div>
+      </div>
+      <div class="row" *ngIf="item.navigation == 1" style="margin: 15px 0px 15px 0px">
+        <div class="col-lg-5" data-aos="fade-left" data-aos-duration="2500">
+          <div style="font-weight: bolder;font-size: larger;margin-top: 25%">
+            {{item.name}}
+          </div>
+
+          <div style="font-style: italic;margin-top: 10px;">
+            {{item.description}}
+          </div>
+          <div style="font-weight: bold;font-size: large;margin-top: 10px;">
+            {{item.date}}
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left" data-aos-duration="2500">
+          <img src="../../assets/lecturers/{{item.imgName}}" style="width:75%;border-radius:15%">
+        </div>
+      </div>
+
+
+    </div>
+    <h2>07.03.2020</h2>
+    <div class="row justify-content-center" data-aos="fade-up" *ngFor="let item of lecturersSecDay">
+      <div class="row" *ngIf="item.navigation == 0" style="margin: 15px 0px 15px 0px">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="2500">
+          <img src="../../assets/lecturers/{{item.imgName}}" style="width:75%;border-radius:15%">
+        </div>
+        <div class="col-lg-5" data-aos="fade-right" data-aos-duration="2500">
+
+          <div style="font-weight: bolder;font-size: larger;margin-top: 25%">
+            {{item.name}}
+          </div>
+
+          <div style="font-style: italic;margin-top: 10px;">
+            {{item.description}}
+          </div>
+          <div style="font-weight: bold;font-size: large;margin-top: 10px;">
+            {{item.date}}
+          </div>
+        </div>
+      </div>
+      <div class="row" *ngIf="item.navigation == 1" style="margin: 15px 0px 15px 0px">
+        <div class="col-lg-5" data-aos="fade-left" data-aos-duration="2500">
+          <div style="font-weight: bolder;font-size: larger;margin-top: 25%">
+            {{item.name}}
+          </div>
+
+          <div style="font-style: italic;margin-top: 10px;">
+            {{item.description}}
+          </div>
+          <div style="font-weight: bold;font-size: large;margin-top: 10px;">
+            {{item.date}}
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left" data-aos-duration="2500">
+          <img src="../../assets/lecturers/{{item.imgName}}" style="width:75%;border-radius:15%">
+        </div>
+      </div>
+
+
+    </div>
+  </div>
 </div>

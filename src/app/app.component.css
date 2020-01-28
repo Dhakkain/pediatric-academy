@@ -1,4 +1,14 @@
-
-.app-component{
-  scroll-behavior: smooth;
+*[id]:before {
+  display: block;
+  content: " ";
+  margin-top: -75px;
+  height: 75px;
+  visibility: hidden;
 }
+
+.homeSection {
+  background: url("../assets/grafikaTlo.jpg") center;
+  background-size: cover;
+  position: relative;
+}
+

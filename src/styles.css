@@ -1,4 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body
+{
+  scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
+  margin: 0
+}
+body {min-height: 100%; margin: 0; font-family: "Comfortaa" !important;  }
+
+
+.wrapper{
+  overflow-x:hidden;
+  position: relative;
+}
+section{
+  margin-bottom:50px;
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.logoContent {
+  text-align: center;
+  z-index: 2;
+}
+p{
+  word-break: break-word;
+}
+h1{
+  word-break: break-word;
+}
+.responsive {
+  width: 100%;
+  height: auto;
+}

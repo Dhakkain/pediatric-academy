@@ -1,27 +1,34 @@
 <nav class="navbar navbar-expand-lg fixed-top navbar-transparent">
-  <div class="container">
+  <div class="container" style="padding-left:10px;">
     <div class="navbar-translate">
-      <a class="navbar-brand">VIII Ogólnopolska Akademia Pediatrii</a>
+      <a href="index.html" class="navbar-brand" style="font-size: 11pt;">
+        <img src="../../assets/logoSmall.png" style="max-width:50px;margin-right: 15px;" /> VIII Ogólnopolska Akademia Pediatrii </a>
     </div>
-    <div>
-      <ul class="navbar-nav ml-auto">
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02" [ngbCollapse]="isCollapsed">
+      <div class="navbar-translate"></div>
+      <ul class="navbar-nav ml-auto" style="margin:0 50 0 50">
+        <li class="nav-item">
+          <a class="nav-link" href="#page-timetable">Terminarz</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#page-competition">
+            Konkurs
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#page-shedule">Harmonogram</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="#page-lecture">
             Wykładowcy
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#page-shedule">Plan konferencji</a>
-        </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#page-about">O nas</a>
+          <a class="nav-link" href="#page-sponsor">Partnerzy</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#page-contact">Kontakt</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#page-sponsor">Partnerzy</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" rel="tooltip" title="Polub na facebook" data-placement="bottom" href="https://www.facebook.com/akademiapediatrii" target="_blank">
@@ -29,9 +36,8 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" rel="tooltip" title="Obserwuj na Instagram" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank">
+          <a class="nav-link" rel="tooltip" title="Obserwuj na Instagram" data-placement="bottom" href="https://www.instagram.com/akademia.pediatrii" target="_blank">
             <i class="fa fa-instagram"></i>
-            <p class="d-lg-none">Instagram</p>
           </a>
         </li>
         <li class="nav-item">

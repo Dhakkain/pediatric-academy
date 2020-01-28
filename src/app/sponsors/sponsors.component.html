@@ -1,1 +1,60 @@
-<h1>Sponsorzy</h1>
+<div style="text-align:center" data-aos="fade-up">
+  <h1 style="font-weight: bolder;">
+    Partnerzy
+  </h1>
+  <div class="container" style="margin-top:40px;">
+    <h3><strong>Partnerzy honorowi </strong></h3>
+    <div class="row">
+      <figure class="col-lg-3" style="width:auto;margin:45px;">
+        <a href="https://www.ump.edu.pl" target="_blank">
+          <img src="../../assets/honorary/umpLogo.jpg" style="width:100%">
+
+        </a>
+        <figcaption style="margin-top:15px;text-align: center;font-weight: bold;">JM Rektor - Prof. dr hab. Andrzej Tykarski</figcaption>
+        <figcaption style="margin-top:15px;text-align: center;font-weight: bold;">Dziekan Wydziału Lekarskiego - Prof. dr hab. Jacek Wysocki</figcaption>
+
+      </figure>
+
+
+      <figure class="col-lg-3" *ngFor="let patronH of honoraryPatrons" style="width:auto;margin:40px;">
+        <a href="{{patronH.url}}" target="_blank">
+
+          <img *ngIf="patronH.imgName" src="../../assets/honorary/{{patronH.imgName}}" [ngStyle]="{'width':patronH.width, 'border-radius':patronH.radius}" >
+        </a>
+        <figcaption style="margin-top:15px;text-align: center;font-weight: bold;">{{patronH.name}}</figcaption>
+      </figure>
+
+    </div>
+    <h2><strong>Patroni medialni </strong></h2>
+    <div class="row ">
+      <figure class="col-lg-3" *ngFor="let patronM of mediaPatrons" style="width:auto;margin:45px;">
+        <a href="{{patronM.url}}" target="_blank">
+          <img *ngIf="patronM.imgName" src="../../assets/media/{{patronM.imgName}}" style="width:110%">
+        </a>
+        <figcaption style="margin-top:15px;text-align: center;font-weight: bold;">{{patronM.name}}</figcaption>
+      </figure>
+
+    </div>
+    <h2><strong>Patroni naukowi</strong></h2>
+    <div class="row">
+      <figure class="col-lg-3" *ngFor="let patronS of scientificPatrons" style="width:auto;margin:45px;">
+        <a href="{{patronS.url}}" target="_blank">
+
+          <img src="../../assets/scientific/{{patronS.imgName}}" style="width:110%;border-radius:15%">
+        </a>
+        <figcaption style="margin-top:15px;text-align: center;font-weight: bold;">{{patronS.name}}</figcaption>
+      </figure>
+
+    </div>
+    <h2><strong>Partnerzy</strong></h2>
+    <div class="row">
+      <figure class="col-lg-3" *ngFor="let sponsor of sponsors" style="width:auto;margin:45px;">
+        <a href="{{sponsor.url}}" target="_blank">
+          <img *ngIf="sponsor.imgName" src="../../assets/sponsors/{{sponsor.imgName}}" style="width:110%">
+        </a>
+        <figcaption style="margin-top:25px;text-align: center;font-weight: bold;">{{sponsor.name}}</figcaption>
+      </figure>
+
+    </div>
+  </div>
+</div>

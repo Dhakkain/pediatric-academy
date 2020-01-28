@@ -12,6 +12,12 @@ import { LecturersComponent } from './lecturers/lecturers.component';
 import {MatCardModule} from '@angular/material/card';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
+import { FooterComponent } from './footer/footer.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { HomeComponent } from './home/home.component';
+import { InviteComponent } from './invite/invite.component';
+import { CompetitionSessionComponent } from './competition-session/competition-session.component';
+import { TimetableComponent } from './timetable/timetable.component';
 
 @NgModule({
   declarations: [
@@ -21,11 +27,17 @@ import { SponsorsComponent } from './sponsors/sponsors.component';
     ContactComponent,
     LecturersComponent,
     NavbarComponent,
-    SponsorsComponent
+    SponsorsComponent,
+    FooterComponent,
+    HomeComponent,
+    InviteComponent,
+    CompetitionSessionComponent,
+    TimetableComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    NgbModule,
     BrowserAnimationsModule,
     ScrollingModule,
     MatCardModule,

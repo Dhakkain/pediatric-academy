@@ -7,26 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutUsComponent implements OnInit {
 
-  people = ["Katarzyna Słodowa",
-  "Katarzyna Słodowa",
-  "Katarzyna Słodowa",
-  "Katarzyna Słodowa",
-  "Katarzyna Słodowa",
-  "Katarzyna Słodowa",
-  "Katarzyna Słodowa",
-  "Katarzyna Słodowa",
-  "Katarzyna Słodowa",
-  "Katarzyna Słodowa",
-  "Katarzyna Słodowa",
-  "Katarzyna Słodowa",
-  "Katarzyna Słodowa",
-  "Katarzyna Słodowa",
-  "Katarzyna Słodowa",
-  "Katarzyna Słodowa",
-  "Katarzyna Słodowa",
-  "Katarzyna Słodowa",
-  "Katarzyna Słodowa",
-  "Katarzyna Słodowa"]
+
 
   constructor() { }
 

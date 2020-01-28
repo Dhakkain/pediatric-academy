@@ -1,0 +1,12 @@
+.footer {
+  background-attachment: fixed;
+  position: relative;
+  line-height: 20px;
+  box-shadow: 0 6px 10px -4px rgba(0,0,0,.15);
+  background: #22222e;
+  color: white;
+}
+
+.copyright{
+font-size: 5pt;
+}
