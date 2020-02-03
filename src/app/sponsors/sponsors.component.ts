@@ -47,8 +47,8 @@ export class SponsorsComponent implements OnInit {
   ];
 
   scientificPatrons: Array<SponsorDto> = [
-    new SponsorDto("", "profDerwich.jpg", "100%", "15%"),
-    new SponsorDto("", "drMarciniakStepak.jpg", "100%")
+    new SponsorDto("", "profDerwich.jpg", "125%", "15%"),
+    new SponsorDto("", "drMarciniakStepak.jpg", "125%")
   ];
 
   sponsors: Array<SponsorDto> = [
