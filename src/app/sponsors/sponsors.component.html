@@ -12,10 +12,8 @@
         </a>
         <figcaption >JM Rektor - Prof. dr hab. Andrzej Tykarski</figcaption>
         <figcaption>Dziekan Wydziału Lekarskiego - Prof. dr hab. Jacek Wysocki</figcaption>
-
+        <figcaption >Prorektor ds. Studenckich i Dydaktycznych - Prof. dr hab. n. med. Ryszard Marciniak</figcaption>
       </figure>
-
-
       <figure class="col-lg-2" *ngFor="let patronH of honoraryPatrons" style="width:auto;margin:25px;">
         <a href="{{patronH.url}}" target="_blank">
 
@@ -50,7 +48,7 @@
     <div class="row" style="justify-content: center;">
       <figure class="col-lg-2" *ngFor="let sponsor of sponsors" style="width:auto;margin:25px;">
         <a href="{{sponsor.url}}" target="_blank">
-          <img *ngIf="sponsor.imgName" src="../../assets/sponsors/{{sponsor.imgName}}" style="width:110%">
+          <img *ngIf="sponsor.imgName" src="../../assets/sponsors/{{sponsor.imgName}}" [ngStyle]="{'width':sponsor.width }">
         </a>
         <figcaption>{{sponsor.name}}</figcaption>
       </figure>

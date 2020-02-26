@@ -18,6 +18,7 @@ import { HomeComponent } from './home/home.component';
 import { InviteComponent } from './invite/invite.component';
 import { CompetitionSessionComponent } from './competition-session/competition-session.component';
 import { TimetableComponent } from './timetable/timetable.component';
+import { ScienceWorkshopsComponent } from './science-workshops/science-workshops.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { TimetableComponent } from './timetable/timetable.component';
     HomeComponent,
     InviteComponent,
     CompetitionSessionComponent,
-    TimetableComponent
+    TimetableComponent,
+    ScienceWorkshopsComponent
   ],
   imports: [
     BrowserModule,

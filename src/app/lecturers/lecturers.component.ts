@@ -9,29 +9,31 @@ import { NavigationEnum } from './lecturer-dto';
 })
 export class LecturersComponent implements OnInit {
   public lecturersFirstDay = [
-    new LecturerDto("lekMatuszkiewicz.jpg","Lek. Eryk Matuszkiewicz ","15:00 - 15:30",
+    new LecturerDto("lekMatuszkiewicz.jpg","Lek. Eryk Matuszkiewicz ","",
       NavigationEnum.left, "Po nitce do kłębka, czyli co internista chciałby powiedzieć pediatrze"),
 
-    new LecturerDto("drSzczapa.jpg","dr hab. n. med. Tomasz Szczapa" , "15:30 - 16:00", NavigationEnum.right, ""),
+    new LecturerDto("drSzczapa.jpg","Dr hab. n. med. Tomasz Szczapa" , "", NavigationEnum.right,
+    "Badanie przedmiotowe noworodka - na co należy zwracać uwagę?"),
 
-    new LecturerDto("drStryczyńska-Kazubska.jpg","Dr n. med. Joanna Kozubska - Stryczyńska","16:00 - 16:30",
+    new LecturerDto("drStryczyńska-Kazubska.jpg","Dr n. med. Joanna Stryczyńska - Kazubska","",
       NavigationEnum.left, "Szczepienia ochronne - proste działanie, trudna rozmowa"),
 
-      // new LecturerDto("","lek. Dagmara Smektała-Smakulska","11:00 - 11:30", NavigationEnum.right, " - "),
+      new LecturerDto("drSmektala.jpg","Lek. Dagmara Smektała-Smakulska",
+      "", NavigationEnum.right, "Kaszel NPL-owy, POZ-owy, izbowy, czyli postępowanie ostrodyżurowe z pacjentem kaszlącym"),
     ]
     public lecturersSecDay = [
-      new LecturerDto("drMarciniak-Stępak.jpg","Dr n. med. Patrycja Marciniak - Stępak", "11:30 - 12:00",
+      new LecturerDto("drMarciniak-Stępak.jpg","Dr n. med. Patrycja Marciniak - Stępak", "",
         NavigationEnum.left, "Symulować czy nie symulować - Oto jest pytanie... O symulacji medycznej słów kilka"),
-      new LecturerDto("profFiglerowicz.jpg","Prof. dr hab. n. med. Magdalena Figlerowicz", "12:00 - 12:30",
+      new LecturerDto("profFiglerowicz.jpg","Prof. dr hab. n. med. Magdalena Figlerowicz", "",
         NavigationEnum.right, "Dokąd może nas zaprowadzić podwyższona aktywność aminotransferaz u dzieci"),
 
-      new LecturerDto("profDerwich.jpg","Prof. dr hab.n.med. Katarzyna Derwich","14:30 - 15:00",
-        NavigationEnum.left, "Czerwone flagi na horyzoncie - kiedy skierować dziecko do onkologa"),
 
-      new LecturerDto("profSiwińska.jpg","Prof. dr hab. n. med. Aldona Siwińska","15:00 - 15:30",
-       NavigationEnum.right, "Horror echo"),
-      new LecturerDto("drChlapowska.jpg","Dr n. med. Joanna Chłapowska","15:30 - 16:00",
-      NavigationEnum.left, ""),
+      new LecturerDto("profSiwińska.jpg","Prof. dr hab. n. med. Aldona Siwińska","",
+               NavigationEnum.left, "Horror echo"),
+               new LecturerDto("drChlapowska.jpg","Dr n. med. Joanna Chłapowska","",
+               NavigationEnum.right, "Jama ustna integralną częścią organizmu"),
+      new LecturerDto("profDerwich.jpg","Prof. dr hab.n.med. Katarzyna Derwich","",
+        NavigationEnum.left, "Czerwone flagi na horyzoncie - kiedy skierować dziecko do onkologa"),
 
 
 

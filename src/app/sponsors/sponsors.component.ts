@@ -17,7 +17,6 @@ export class SponsorsComponent implements OnInit {
     ),
 
     new SponsorDto("", "poznanLogo.jpg", "110%", "https://www.poznan.pl/"),
-    new SponsorDto("", "rpdLogo.png", "110%", "https://brpd.gov.pl/"),
     new SponsorDto("", "wilLogo.png", "110%", "https://wil.org.pl/"),
 
     new SponsorDto(
@@ -29,9 +28,11 @@ export class SponsorsComponent implements OnInit {
     new SponsorDto(
       "",
       "stn.png",
-      "90%",
+      "110%",
       "http://stn.ump.edu.pl/stn/aktualnosci"
-    )
+    ),
+    new SponsorDto("", "komisjaLogo.jpg", "110%", "https://wil.org.pl/organy/okregowa-rada-lekarska/komisje-problemowe/komisja-ds-mlodych-lekarzy/", ""),
+
   ];
 
   mediaPatrons: Array<SponsorDto> = [
@@ -42,7 +43,8 @@ export class SponsorsComponent implements OnInit {
     new SponsorDto("", "smLogo.jpg", "120%", "http://www.standardy.pl/"),
     new SponsorDto("", "ffLogo.png", "120%", "https://food-forum.pl/"),
     new SponsorDto("", "mpplLogo.gif", "120%", "https://www.mp.pl/"),
-    new SponsorDto("", "pediatrycznyLogo.png", "120%", "https://przegladpediatryczny.pl/")
+    new SponsorDto("", "pediatrycznyLogo.png", "120%", "https://przegladpediatryczny.pl/"),
+    new SponsorDto("", "Czelej.png", "100%", "https://czelej.com.pl/"),
 
   ];
 
@@ -52,7 +54,6 @@ export class SponsorsComponent implements OnInit {
   ];
 
   sponsors: Array<SponsorDto> = [
-    new SponsorDto("Prorektor ds. Studenckich i Dydaktycznych - Prof. dr hab. n. med. Ryszard Marciniak", "umpLogo.jpg", "70%", ""),
     new SponsorDto(" ", "gradatimLogo.png", "100%", "https://www.gradatim-sympozja.pl/"),
     new SponsorDto("", "resonnezLogo.svg", "125%", "https://resonnez.com/"),
     new SponsorDto(
@@ -62,6 +63,8 @@ export class SponsorsComponent implements OnInit {
       "http://dzieciakichojraki.pl/"
     ),
     new SponsorDto("", "lepolekLogo.png", "115%", "https://lepolek.pl/"),
+    new SponsorDto("", "redbull.jpg", "100%", "https://www.redbull.com/pl-pl/"),
+    new SponsorDto("", "medgical.png", "170%", "https://medgical.pl/"),
 
   ];
 
