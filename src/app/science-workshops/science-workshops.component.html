@@ -3,19 +3,37 @@
     Warsztaty
   </h1>
   <div class="container" style="margin-top:40px;">
+
+    <div style="margin: 20px 0px 20px 0px" class="row justify-content-center" data-aos="fade-up">
+
+      <a style="width:80%;" target="_blank" href="https://docs.google.com/forms/d/1HrVE3vA5UD8fqlL9oTxkFNSM6cuRi6dC2LN_6gynHbE/viewform?fbclid=IwAR0uLby3QJDzpene5fWnJoBlYus139uEWpCwuu_kQEk3jx8mfb9Cbolzv2Y&edit_requested=true">
+        <button  class="form-control btn" style="background-color: #22222e;color: white;font-weight: bold;">
+          Rejestracja na warsztaty
+        </button>
+        </a>
+    </div>
+
     <div style="margin: 20px 0px 20px 0px;" class="row justify-content-center" data-aos="fade-up">
+
+
       <ngb-carousel *ngIf="workshops" [interval]="5000" [showNavigationArrows]="true" [showNavigationIndicators]="false">
         <ng-template ngbSlide *ngFor="let workshop of workshops">
           <div class="picsum-img-wrapper">
             <img src="../../assets/workshops/{{workshop.imgName}}" style="width: 85%;border-radius:15%; margin-bottom: 25px;" alt="Random slide">
-            <a href="../../files/{{workshop.pathPdf}}"  target="_blank" style="margin-top: 25px;">
-              <button class="form-control btn" style="background-color: #22222e;color: white;font-weight: bold; ">
-                Regulamin {{workshop.name}}
-              </button>
-            </a>
+
           </div>
-        </ng-template>
+        </ng-template>,
       </ngb-carousel>
+
+        <div class="col-lg-5" *ngFor="let workshop of workshops" style="margin:10px">
+
+          <a href="../../files/{{workshop.pathPdf}}"  target="_blank" style="margin-top: 25px;">
+            <button  class="form-control btn" style="background-color: #22222e;color: white;font-weight: bold; ">
+              Regulamin {{workshop.name}}
+            </button>
+          </a>
+      </div>
+
 
     </div>
   </div>

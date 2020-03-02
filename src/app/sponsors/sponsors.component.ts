@@ -64,7 +64,7 @@ export class SponsorsComponent implements OnInit {
     ),
     new SponsorDto("", "lepolekLogo.png", "115%", "https://lepolek.pl/"),
     new SponsorDto("", "redbull.jpg", "100%", "https://www.redbull.com/pl-pl/"),
-    new SponsorDto("", "medgical.png", "170%", "https://medgical.pl/"),
+    new SponsorDto("", "medgical.png", "115%", "https://medgical.pl/"),
 
   ];
 

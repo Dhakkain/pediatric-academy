@@ -19,6 +19,8 @@ import { InviteComponent } from './invite/invite.component';
 import { CompetitionSessionComponent } from './competition-session/competition-session.component';
 import { TimetableComponent } from './timetable/timetable.component';
 import { ScienceWorkshopsComponent } from './science-workshops/science-workshops.component';
+import { MatDialogModule, MatDialogRef } from '@angular/material';
+import { PolicyModalComponent } from './policy-modal/policy-modal.component';
 
 @NgModule({
   declarations: [
@@ -34,17 +36,23 @@ import { ScienceWorkshopsComponent } from './science-workshops/science-workshops
     InviteComponent,
     CompetitionSessionComponent,
     TimetableComponent,
-    ScienceWorkshopsComponent
+    ScienceWorkshopsComponent,
+    PolicyModalComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    MatDialogModule,
+
     BrowserAnimationsModule,
     ScrollingModule,
     MatCardModule,
   ],
-  providers: [],
+  entryComponents:[
+    PolicyModalComponent
+],
+  providers: [ [{provide: MatDialogRef, useValue: {}}],],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
